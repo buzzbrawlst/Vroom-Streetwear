@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Wishlist | VROOM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>❤️ YOUR WISHLIST</h1>
+
+<a href="index.html">
+← Back
+</a>
+
+</header>
+
+
+<div class="cards" id="wishlist">
+
+</div>
+
+
+<script>
+
+let wishlist =
+JSON.parse(localStorage.getItem("wishlist")) || [];
+
+
+let container =
+document.getElementById("wishlist");
+
+
+wishlist.forEach(item=>{
+
+
+container.innerHTML += `
+
+<div class="card">
+
+<img src="${item.image}">
+
+<h3>${item.name}</h3>
+
+<p class="brand">
+${item.brand}
+</p>
+
+<p class="price">
+${item.price}
+</p>
+
+</div>
+
+`;
+
+
+});
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>T-Shirts | VROOM</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="products.js"></script>
+<script defer src="script.js"></script>
+
+</head>
+
+
+<body data-category="T-Shirts">
+
+
+<header>
+
+<h1>T-SHIRTS</h1>
+
+<p>Clean oversized tees & Y2K essentials 🔥</p>
+
+<a href="index.html">
+← Back Home
+</a>
+
+<br><br>
+
+<a href="wishlist.html">
+❤️ Wishlist
+</a>
+
+<a href="cart.html">
+🛒 Cart
+</a>
+
+</header>
+
+
+
+<div class="controls">
+
+<select id="sort" onchange="sortProducts()">
+
+<option value="default">
+Sort Products
+</option>
+
+<option value="cheap">
+Cheapest
+</option>
+
+<option value="expensive">
+Most Expensive
+</option>
+
+<option value="rating">
+Highest Rated
+</option>
+
+</select>
+
+</div>
+
+
+
+<div class="cards" id="product-container"></div>
+
+
+
+<script>
+
+window.onload=function(){
+
+loadProducts("T-Shirts");
+
+}
+
+</script>
+
+
+</body>
+
+</html>

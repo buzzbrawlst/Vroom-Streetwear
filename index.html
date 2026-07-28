@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>VROOM STREETWEAR DATABASE</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="products.js"></script>
+<script defer src="script.js"></script>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<section class="hero-banner">
+
+
+<div class="hero-text">
+
+<h2>
+VROOM
+</h2>
+
+<h3>
+STREETWEAR DATABASE
+</h3>
+
+<p>
+500+ curated pieces.
+Underground fashion archive.
+</p>
+
+
+<a href="#product-container">
+EXPLORE DROPS
+</a>
+
+
+</div>
+
+
+</section>
+
+<h1>VROOM STREETWEAR DATABASE</h1>
+
+<p>Curated underground streetwear finds 🔥</p>
+
+
+<input 
+id="search" 
+placeholder="Search clothing..." 
+onkeyup="searchItems()"
+>
+
+
+<div class="top-buttons">
+
+<a href="wishlist.html">
+❤️ Wishlist
+</a>
+
+<a href="cart.html">
+🛒 Cart
+</a>
+
+</div>
+
+
+</header>
+
+
+
+<nav>
+
+<a href="index.html">
+Home
+</a>
+
+<a href="joggers.html">
+Joggers
+</a>
+
+<a href="tshirts.html">
+T-Shirts
+</a>
+
+<a href="hoodies.html">
+Hoodies
+</a>
+
+<a href="brands.html">
+Brands
+</a>
+
+</nav>
+
+
+
+<section class="hero">
+
+
+<h2>🔥 Featured Drops</h2>
+
+
+<div class="controls">
+
+<select id="sort" onchange="sortProducts()">
+
+<option value="default">
+Sort Products
+</option>
+
+<option value="cheap">
+Cheapest
+</option>
+
+<option value="expensive">
+Most Expensive
+</option>
+
+<option value="rating">
+Highest Rated
+</option>
+
+</select>
+
+
+<select id="priceFilter" onchange="filterProducts()">
+
+<option value="all">
+All Prices
+</option>
+
+<option value="under25">
+Under £25
+</option>
+
+<option value="under50">
+Under £50
+</option>
+
+<option value="50to75">
+£50 - £75
+</option>
+
+<option value="75to100">
+£75 - £100
+</option>
+
+<option value="100plus">
+£100+
+</option>
+
+</select>
+
+
+<p id="count">
+0 Items
+</p>
+
+</div>
+
+
+<div class="cards" id="product-container">
+
+</div>
+
+
+
+</section>
+
+<section class="hero-banner">
+
+<div class="hero-text">
+
+<h2>VROOM</h2>
+
+<h3>STREETWEAR DATABASE</h3>
+
+<p>500+ curated pieces. Underground fashion archive.</p>
+
+<a href="#product-container">
+EXPLORE DROPS
+</a>
+
+</div>
+
+</section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Cart | VROOM</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🛒 YOUR CART</h1>
+
+<a href="index.html">
+← Back Home
+</a>
+
+</header>
+
+
+
+<div class="cards" id="cart-container"></div>
+
+
+
+<h2 id="total"></h2>
+
+
+
+<script>
+
+
+let cart =
+JSON.parse(localStorage.getItem("cart")) || [];
+
+
+let container =
+document.getElementById("cart-container");
+
+
+let total = 0;
+
+
+
+cart.forEach(item=>{
+
+
+total += item.price;
+
+
+
+container.innerHTML += `
+
+<div class="card">
+
+<img src="${item.image}">
+
+<h3>${item.name}</h3>
+
+<p class="brand">
+${item.brand}
+</p>
+
+<p class="price">
+£${item.price}
+</p>
+
+</div>
+
+`;
+
+
+});
+
+
+
+document.getElementById("total").innerHTML =
+"TOTAL: £" + total;
+
+
+
+</script>
+
+
+</body>
+
+</html>
