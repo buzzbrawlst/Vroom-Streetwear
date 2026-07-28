@@ -700,14 +700,14 @@ tags:[
 
 
 {
-name:"Zara Heavyweight Hoodie",
-brand:"Zara",
-price:45,
-rating:4.5,
+name:"Minga London Blackout Washed Zip-Up Hoodie",
+brand:"Minga London",
+price:85,
+rating:5,
 badge:"CLEAN",
 category:"Hoodies",
-image:"",
-link:"https://www.zara.com",
+image:"https://plain-weur-prod-public.komododecks.com/202607/28/GMXfmC1QvkKrZ2cu7L0j/image.jpg",
+link:"https://www.mingalondon.com/products/blackout-washed-zip-up-hoodie-man",
 tags:[
 "Minimal",
 "Heavyweight",
